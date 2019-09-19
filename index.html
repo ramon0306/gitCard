@@ -8,22 +8,30 @@
 <body class="ready">
 
     <header class="hearder-search">
-        <input type="text" name="usuario-github" id="usuario-github" />
-        <input type="button" name="buscar-github" id="buscar-github" value="Mostrar Cartão" />
-    </header>
+        <input type="text" name="usuario-github" id="username" />
+        <button type="button" onclick="getGitHubInfo()" id="buscar-avatar">Mostrar cartao</button>
+        
+        
 
+    </header>
     <div class="github-card user-card">
         <div class="header User"></div>
-        <a class="avatar" href="https://github.com/joseolinda" target="_top"><img src="https://avatars2.githubusercontent.com/u/5969090?v=4&amp;s=80" alt="José Olinda"></a>
+        <a class="avatar" href="https://github.com/joseolinda" target="_top"><img src="https://avatars2.githubusercontent.com/u/5969090?v=4&amp;s=80" id="github-avatar" alt="José Olinda"></a>
         <div class="content">
             <h1>José Olinda</h1>
             <ul class="status">
-                <li><a href="https://github.com/joseolinda?tab=repositories" target="_top"><strong>40</strong>Repos</a></li>
-                <li><a href="https://gist.github.com/joseolinda" target="_top"><strong>2</strong>Gists</a></li>
-                <li><a href="https://github.com/joseolinda/followers" target="_top"><strong>21</strong>Followers</a></li>
+                <li><a href="https://github.com/joseolinda?tab=repositories" id="repositorio" target="_top"><strong>40</strong>Repos</a></li>
+                <li><a href="https://gist.github.com/joseolinda" id="gists" target="_top"><strong>2</strong>Gists</a></li>
+                <li><a href="https://github.com/joseolinda/followers" id="followers" target="_top"><strong>21</strong>Followers</a></li>
             </ul>
         </div>
     </div>
+    <script src="gitcard.js"></script>
+
+
+
 </body>
 
 </html>
+
+
